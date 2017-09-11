@@ -30,6 +30,10 @@ var dashboard = new ParseDashboard({
       "appId": api.appId,
       "masterKey": api.masterKey,
       "appName": "AhTaSvadba"
+    },"users": [
+    {
+      "user":"dsenkovic",
+      "pass":"omoredub0ko"
     }
   ]
 }, true); //allowInsecureHTTP 
