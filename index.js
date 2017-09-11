@@ -23,18 +23,22 @@ var api = new ParseServer({
   }
 });
 
-var dashboard = new ParseDashboard({
-  "apps": [
-    {
-      "serverURL": api.serverURL,
-      "appId": api.appId,
-      "masterKey": api.masterKey,
-      "appName": "AhTaSvadba"
-    }],"users": [
-    {
-      "user":"dsenkovic",
-      "pass":"omoredub0ko"
-    }]
+var dashboard = new ParseDashboard(
+{
+    "apps": [
+		{
+		  "serverURL": "http://ahtasvadba-staging.herokuapp.com/parse",
+		  "appId": "ahtasvadba-staging",
+		  "masterKey": "omoredub0ko",
+		  "appName": "Ah Ta Svadba"
+		}
+	],
+	"users": [
+		{
+		  "user":"dsenkovic",
+		  "pass":"omoredub0ko"
+		}
+	]
 }, true); //allowInsecureHTTP 
 
 
