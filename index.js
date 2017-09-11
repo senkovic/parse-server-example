@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_0gp6wvtx:hje7gctdqg2oiu3eguu7hu1v2q@ds133054.mlab.com:33054/heroku_0gp6wvtx',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
-  masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://localhost:1337/parse',  // Don't forget to change to https if needed
+  appId: process.env.APP_ID || 'ahtasvadba-staging',
+  masterKey: process.env.MASTER_KEY || 'omoredub0ko', //Add your master key here. Keep it secret!
+  serverURL: process.env.SERVER_URL || 'http://ahtasvadba-staging.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
@@ -36,7 +36,7 @@ app.use(mountPath, api);
 
 // Parse Server plays nicely with the rest of your web routes
 app.get('/', function(req, res) {
-  res.status(200).send('Index file!');
+  res.status(200).send('Index file2!');
 });
 
 // There will be a test page available on the /test path of your server url
