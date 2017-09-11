@@ -30,7 +30,7 @@ var dashboard = new ParseDashboard(
 		  "serverURL": "http://ahtasvadba-staging.herokuapp.com/parse",
 		  "appId": "ahtasvadba-staging",
 		  "masterKey": "omoredub0ko",
-		  "appName": "Ah Ta Svadba"
+		  "appName": "Ah Ta Svadba - Staging"
 		}
 	],
 	"users": [
