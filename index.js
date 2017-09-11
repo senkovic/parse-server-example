@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_0gp6wvtx:hje7gctdqg2oiu3eguu7hu1v2q@ds133054.mlab.com:33054/heroku_0gp6wvtx',
-  cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'ahtasvadba-staging',
-  masterKey: process.env.MASTER_KEY || 'omoredub0ko', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'http://ahtasvadba-staging.herokuapp.com/parse',  // Don't forget to change to https if needed
+  databaseURI: 'mongodb://heroku_0gp6wvtx:hje7gctdqg2oiu3eguu7hu1v2q@ds133054.mlab.com:33054/heroku_0gp6wvtx',
+  cloud: __dirname + '/cloud/main.js',
+  appId: 'ahtasvadba-staging',
+  masterKey: 'omoredub0ko', //Add your master key here. Keep it secret!
+  serverURL: 'http://ahtasvadba-staging.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
