@@ -24,7 +24,6 @@ var api = new ParseServer({
 });
 
 var dashboard = new ParseDashboard({
-  "allowInsecureHTTP": true,
   "apps": [
     {
       "serverURL": api.serverURL,
@@ -33,7 +32,7 @@ var dashboard = new ParseDashboard({
       "appName": "AhTaSvadba"
     }
   ]
-});
+}, true); //allowInsecureHTTP 
 
 
 
