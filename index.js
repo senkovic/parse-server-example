@@ -34,7 +34,7 @@ var dashboard = new ParseDashboard({
     {
       "user":"dsenkovic",
       "pass":"omoredub0ko"
-    }
+    }]
   ]
 }, true); //allowInsecureHTTP 
 
